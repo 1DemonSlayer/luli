@@ -1,14 +1,14 @@
 {
   "name": "AFK Bot",
   "bot-account": {
-    "username": "Slobot00",
+    "username": "24/7 AFK bot",
     "password": "",
     "type": "offline"
   },
   "server": {
-    "ip": "slobtest1.aternos.me",
-    "port": 27586,
-    "version": "",
+    "ip": "survialsmp123.aternos.me",
+    "port": 58947,
+    "version": "1.16.5",
     "try-creative": false
   },
   "position": {
@@ -60,17 +60,20 @@
   "modules": {
     "avoidMobs": true,
     "combat": true,
-    "beds": false,
+    "beds": true,
     "chat": true,
     "console-commands": true
   },
   "combat": {
-    "attack-mobs": true,
-    "auto-eat": true
+    "attack-mobs": true
   },
   "beds": {
-    "pick-up-day": false,
-    "place-night": false
+    "enabled": true,
+    "place-night": true,
+    "sleep-night": true,
+    "pick-up-day": true,
+    "auto-find-bed": true,
+    "reuse-bed": true
   },
   "discord": {
     "enabled": false,
@@ -83,5 +86,10 @@
   },
   "chat": {
     "respond": true
+  },
+  "rejoin-cycle": {
+    "enabled": true,
+    "leave-after": 20000,
+    "rejoin-delay": 2000
   }
 }
